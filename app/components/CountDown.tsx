@@ -20,13 +20,13 @@ import React, { useState, useEffect } from "react";
 
 const CountDown = () => {
   
-  let difference = +new Date(`10/10/2023`) - +new Date();
-  const [delay, setDelay] = useState(difference);
+  let const1 = +new Date(`10/10/2023`) - +new Date();
+  const [delay, setDelay] = useState(const1);
 
-  const d = Math.floor(difference / (1000 * 60 * 60 * 24));
-  const h = Math.floor((difference / (1000 * 60 * 60)) % 24);
-  const m = Math.floor((difference / 1000 / 60) % 60);
-  const s = Math.floor((difference / 1000) % 60);
+  const d = Math.floor(const1 / (1000 * 60 * 60 * 24));
+  const h = Math.floor((const1 / (1000 * 60 * 60)) % 24);
+  const m = Math.floor((const1 / 1000 / 60) % 60);
+  const s = Math.floor((const1 / 1000) % 60);
 
   useEffect(() => {
     const timer = setInterval(() => {
